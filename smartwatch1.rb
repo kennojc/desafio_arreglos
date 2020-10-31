@@ -1,6 +1,4 @@
 pasos = ['100', '21','231a', '2031','1052000', '213b', 'b123']
-filtered_steps = []
-
 
 def clear_steps (pasos)
     discarded_steps=[]
@@ -20,13 +18,10 @@ def clear_steps (pasos)
         if (pasos > 200) && (pasos < 100000)
             ready_steps.push(pasos)
         end
-
     end
 
     steps_avg = ready_steps.sum / ready_steps.count.to_f
-
     puts steps_avg
-
 end
 
 clear_steps(pasos)

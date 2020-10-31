@@ -10,8 +10,6 @@ def read_file(filename)
     return array
 end
 
-array = read_file("procesos.data")
-
 def condition (limit,array)
     to_file = []
     n = array.count
@@ -21,7 +19,9 @@ def condition (limit,array)
    return to_file 
 end
 
+array = read_file("procesos.data")
 output = condition(limit,array)
+
 File.write("procesos_filtrados.data",output.join("\n"))
 
 
